@@ -10,6 +10,7 @@
         <scroll-animation></scroll-animation>
         <div class="sous-articles">
           <a href="/files/romain-doyen-cv.pdf" download="romain-doyen-cv.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;{{ post.cv }}</a>
+          <a href="https://github.com/RomainDoyen" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp; Mon Github</a>
         </div>
       </div>
     </div>

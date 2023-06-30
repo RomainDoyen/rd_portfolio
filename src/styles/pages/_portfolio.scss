@@ -1,75 +1,93 @@
 .box-article {
-    background-color: #d1d1d1;
-    padding: 3em 4em;
-    margin: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #c5c4c4;
-    flex: 1 1 300px;
-  }
-  
-  .cot {
-    display: inline-flex;
-    justify-content: center;
+  background-color: #d1d1d1;
+  padding: 3em 4em;
+  margin: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #c5c4c4;
+  /*flex: 1 1 300px;*/
+  position: relative;
+}
+
+.cot {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.art img {
+  width: 300px;
+  font-size: 20px;
+  margin-bottom: 25px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.art h3 {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.art h4, p {
+  font-style: italic;
+  margin-bottom: 15px;
+  line-height: 2rem;
+}
+
+.link {
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+
+.link + .link {
+  top: 0;
+  right: 35px;
+}
+
+.link-projet {
+  text-decoration: none;
+  color: #3a77c7;
+  transition: 0.35s ease-out;
+  font-size: 1.5rem;
+}
+
+.link-projet:hover {
+  color: #b5b5b5;
+}
+
+.techno {
+  font-weight: bold;
+  color: #585353;
+  transition: all 0.35s ease-out;
+  cursor: pointer;
+}
+
+.techno:hover {
+  color: #3a77c7;
+}
+
+.tags {
+  border-radius: 10px;
+  border: 1px solid #848383;
+  padding: 10px;
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 1110px) {
+  div.cot, div.art img {
     flex-wrap: wrap;
-    margin-bottom: 50px;
   }
-  
-  div.art img {
-    width: 300px;
-    font-size: 20px;
-    margin-bottom: 25px;
-    background-size: cover;
-    border-radius: 5px;
-  }
-  
-  .art h3 {
-    font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 10px;
-  }
-  
-  .art h4, p {
-    font-style: italic;
-    margin-bottom: 15px;
-    line-height: 2rem;
-  }
-  
   .link-projet {
-      text-decoration: none;
-      color: #3a77c7;
-      padding: 17px;
-      border-radius: 10px;
-      background-color: #b5b5b5;
-      border: 1px solid #aeaeae;
-      font-size: 1vw;
-      transition: 0.35s ease-out;
+    font-size: 2vw;
   }
-  
-  .link-projet:hover {
-    color: #b5b5b5;
-    background-color: #3a77c7;
+}
+
+@media only screen and (max-width: 420px) {
+  .link-projet {
+    font-size: 3vw;
   }
-  
-  .techno {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: blueviolet;
-  }
-  
-  @media only screen and (max-width: 1110px) {
-    div.cot, div.art img {
-      flex-wrap: wrap;
-    }
-    .link-projet {
-      font-size: 2vw;
-    }
-  }
-  
-  @media only screen and (max-width: 420px) {
-    .link-projet {
-      font-size: 3vw;
-    }
-  }
+}

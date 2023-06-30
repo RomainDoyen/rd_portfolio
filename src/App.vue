@@ -35,7 +35,7 @@ export default {
 
 <template>
   <div class="container">
-    <HomeView msg="Romain Doyen" msgp="CV personnel"/>
+    <HomeView msg="Romain Doyen" msgp="💻 Front-end"/>
     <FooterView msg="Réseaux sociaux"/>
     <button @click="scrollToTop" id="myBtn" v-show="scY > 300"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
   </div>

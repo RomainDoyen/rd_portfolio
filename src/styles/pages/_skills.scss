@@ -1,0 +1,28 @@
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.6em 1em;
+    border-radius: 50px;
+  }
+  
+  .skills-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  
+  .bar {
+    padding: 40px;
+  }
+  
+  .bar img {
+    width: 100px;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: 550;
+    font-size: 20px;
+  }

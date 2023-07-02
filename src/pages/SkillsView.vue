@@ -9,7 +9,7 @@
                 <th scope="col">{{ skill.title }}</th>
               </tr>
               <tr v-for="(tech, j) in skill.tech" :key="j">
-                <td><img v-bind:src="getImageUrl(tech.icon)" /></td>
+                <td><img v-bind:src="getImageUrl(tech.icon)" alt="techno" /></td>
                 <td>{{ tech.title }}</td>
               </tr>
             </tbody>

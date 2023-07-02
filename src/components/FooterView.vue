@@ -17,7 +17,7 @@
                   </div>
               </div>
               <div class="copy">
-                  <p>&copy; {{ footer.cop_1 }}<span id="dac"><img id="dac-logo" src="../assets/2.webp"/></span>{{ footer.cop_2 }}<a href="#">{{ footer.cgu }}</a></p>
+                  <p>&copy; {{ footer.cop_1 }}<span id="dac"><img id="dac-logo" src="../assets/2.webp" alt="footer"/></span>{{ footer.cop_2 }}<a href="#">{{ footer.cgu }}</a></p>
               </div>
           </div>
       </footer>

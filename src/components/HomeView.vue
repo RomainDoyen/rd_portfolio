@@ -2,10 +2,10 @@
     <div class="home--vue">
       <header>
         <div class="head-motion">
-          <img id="head-ban" src="../assets/header.webp" />
+          <img id="head-ban" src="../assets/header.webp" alt="header"/>
         </div>
         <div class="head">
-          <img class="logo" src="../assets/rd.webp" />
+          <img class="logo" src="../assets/rd.webp" alt="logo"/>
           <h1>{{ msg }}</h1>
           <p>{{ msgp }}</p>
         </div>

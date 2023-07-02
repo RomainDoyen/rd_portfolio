@@ -11,11 +11,11 @@ div.menu li {
 
 div.menu li a {
   text-decoration: none;
-  color: #9A9A9A;
+  color: var(--color-menu-li-a);
   transition: 0.35s ease-in;
 }
 
-div.menu li a:hover { color: #1d1d1d; }
+div.menu li a:hover { color: var(--color-menu-li-a-hover); }
 
 div.head-motion,
 div.motion_menu,
@@ -48,15 +48,15 @@ img.logo {
 }
 
 div.head h1 {
-  color: #868686;
+  color: var(--color-head-h1);
   text-transform: uppercase;
 }
 
 div.head p {
-  background-color: #3d545c;
+  background-color: var(--bg-head-p);
   border-radius: 30px;
   padding: 20px;
-  color: #c7a23a;
+  color: var(--color-head-p);
   font-style: italic;
 }
 
@@ -70,11 +70,11 @@ div.head p {
 
 div.sous-articles a {
   text-decoration: none;
-  color: #C7A23A;
+  color: var(--color-sous-articles-a);
   padding: 17px;
   border-radius: 10px;
-  background-color: #d1d1d1;
-  border: 1px solid #c5c4c4;
+  background-color: var(--bg-sous-articles-a);
+  border: 1px solid var(--border-sous-articles-a);
   font-size: 20px;
   transition: 0.35s ease-out;
   margin-top: 50px;
@@ -83,6 +83,6 @@ div.sous-articles a {
 }
 
 div.sous-articles a:hover { 
-  color: #d1d1d1;
-  background-color: #C7A23A; 
+  color: var(--color-sous-articles-a-hover);
+  background-color: var(--bg-sous-articles-a-hover); 
 }

@@ -14,9 +14,9 @@
       <div class="motion_menu">
           <div class="menu">
               <ul>
-                  <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Acceuil</a></li>
-                  <li><a href="#competence"><i class="fa fa-code" aria-hidden="true"></i>&nbsp; Compétences</a></li>
-                  <li><a href="#portfolio"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Portfolio</a></li>
+                  <li><a href="#home"><i class="fa-solid fa-house"></i>&nbsp; Acceuil</a></li>
+                  <li><a href="#competence"><i class="fa-solid fa-code"></i>&nbsp; Compétences</a></li>
+                  <li><a href="#portfolio"><i class="fa-solid fa-book"></i>&nbsp; Portfolio</a></li>
               </ul>
           </div>
       </div>

@@ -2,9 +2,33 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  /* Footer */
   --color-white: #fff;
   --copy-a-c: #CAA13D;
-  
+  /* Color settings */
+  --bg-body: #dddcdc;
+  --bg-mybtn: #CAA13D;
+  --color-mybtn: #283F5C;
+  --bg-motion_menu: #3d545c;
+  /* Portfolio */
+  --bg-box-article: #d1d1d1;
+  --border-box-article: #c5c4c4;
+  --color-link-projet: #728aaa;
+  --color-link-projet-hover: #b5b5b5;
+  --color-techno: #585353;
+  --color-tech-hover: #3a77c7;
+  --border-tags: #848383;
+  /* Home */
+  --color-menu-li-a: #9A9A9A;
+  --color-menu-li-a-hover: #1d1d1d;
+  --color-head-h1: #868686;
+  --color-head-p: #c7a23a;
+  --bg-head-p: #3d545c;
+  --color-sous-articles-a: #C7A23A;
+  --color-sous-articles-a-hover: #d1d1d1;
+  --bg-sous-articles-a-hover: #C7A23A;
+  --bg-sous-articles-a: #d1d1d1;
+  --border-sous-articles-a: #c5c4c4;
 }
 
 *, ::before, ::after {
@@ -17,7 +41,7 @@
 body, html { 
   font-family: 'Quicksand', sans-serif;
   height: 100%;
-  background-color: #dddcdc;
+  background-color: var(--bg-body);
   scroll-behavior: smooth;
 }
 
@@ -35,9 +59,9 @@ h1, h2, h3 {
   font-size: 30px;
   border: none;
   outline: none;
-  background: #CAA13D;
+  background: var(--bg-mybtn);
   border-radius: 50%;
-  color: #283F5C;
+  color: var(--color-mybtn);
   cursor: pointer;
 } 
  
@@ -47,7 +71,6 @@ h1, h2, h3 {
 }
 
 /* Responsive */
-
 @media only screen and (max-width: 1210px){
   .main {
     width:320px;
@@ -96,7 +119,7 @@ h1, h2, h3 {
   }
 
   div.motion_menu {
-    background-color: #3d545c;
+    background-color: var(--bg-motion_menu);
     width: 100%;
     margin-bottom: 25px;
   }

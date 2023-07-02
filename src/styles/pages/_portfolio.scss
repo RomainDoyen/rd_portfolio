@@ -1,12 +1,12 @@
 .box-article {
-  background-color: #d1d1d1;
+  background-color: var(--bg-box-article);
   padding: 3em 4em;
   margin: 15px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #c5c4c4;
+  border: 1px solid var(--border-box-article);
   /*flex: 1 1 300px;*/
   position: relative;
 }
@@ -50,29 +50,29 @@ div.art img {
 
 .link-projet {
   text-decoration: none;
-  color: #3a77c7;
+  color: var(--color-link-projet);
   transition: 0.35s ease-out;
   font-size: 1.5rem;
 }
 
 .link-projet:hover {
-  color: #b5b5b5;
+  color: var(--color-link-projet-hover);
 }
 
 .techno {
   font-weight: bold;
-  color: #585353;
+  color: var(--color-techno);
   transition: all 0.35s ease-out;
   cursor: pointer;
 }
 
 .techno:hover {
-  color: #3a77c7;
+  color: var(--color-techno-hover);
 }
 
 .tags {
   border-radius: 10px;
-  border: 1px solid #848383;
+  border: 1px solid var(--border-tags);
   padding: 10px;
   margin-left: 8px;
 }

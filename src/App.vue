@@ -37,6 +37,8 @@ export default {
   <div class="container">
     <HomeView msg="Romain Doyen" msgp="💻 Front-end"/>
     <FooterView msg="Réseaux sociaux"/>
-    <button @click="scrollToTop" id="myBtn" v-show="scY > 300"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+    <button @click="scrollToTop" id="myBtn" v-show="scY > 300">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
   </div>
 </template>

@@ -4,12 +4,12 @@
           <div class="cot">
             <div class="box-article art" v-for="projet in projets" :key="projet.id">
               <div v-if="projet?.link" class="link">
-                <a class="link-projet" target="_blank" :href="projet.link">
+                <a class="link-projet" target="_blank" :href="projet.link" aria-label="Lien vers le site du projet">
                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
               </div>
               <div v-if="projet?.link_code" class="link">
-                <a class="link-projet" target="_blank" :href="projet.link_code">
+                <a class="link-projet" target="_blank" :href="projet.link_code" aria-label="Lien vers le code source">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </div>

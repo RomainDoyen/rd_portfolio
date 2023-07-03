@@ -6,9 +6,9 @@
                   <div class="single-footer">
                       <h4> 🙋🏽‍♂️ {{ msg }}</h4>
                       <div class="footer-social">
-                          <a target="_blank" href="https://www.facebook.com/designandcreation39/"><i class="fa-brands fa-facebook-f"></i></a>
-                          <a target="_blank" href="https://github.com/RomainDoyen/"><i class="fa-brands fa-github"></i></a>
-                          <a target="_blank" href="https://www.instagram.com/designandcreation_rd/"><i class="fa-brands fa-instagram"></i></a>
+                          <a target="_blank" href="https://www.facebook.com/designandcreation39/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                          <a target="_blank" href="https://github.com/RomainDoyen/" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+                          <a target="_blank" href="https://www.instagram.com/designandcreation_rd/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                       </div>
                   </div>
                   <div class="single-footer">

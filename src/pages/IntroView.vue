@@ -9,8 +9,8 @@
           </div>
         <scroll-animation></scroll-animation>
         <div class="sous-articles">
-          <a href="/files/romain-doyen-cv.pdf" download="romain-doyen-cv.pdf"><i class="fa-regular fa-file-pdf"></i>&nbsp; {{ post.cv }}</a>
-          <a href="https://github.com/RomainDoyen" target="_blank"><i class="fa-brands fa-github"></i>&nbsp; Mon Github</a>
+          <a href="/files/romain-doyen-cv.pdf" download="romain-doyen-cv.pdf" aria-label="CV"><i class="fa-regular fa-file-pdf"></i>&nbsp; {{ post.cv }}</a>
+          <a href="https://github.com/RomainDoyen" target="_blank" aria-label="Profile Github"><i class="fa-brands fa-github"></i>&nbsp; Mon Github</a>
         </div>
       </div>
     </div>

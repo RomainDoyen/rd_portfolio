@@ -54,6 +54,8 @@ export default {
       return new URL(`../assets/${name}`, import.meta.url).href;
     };
 
+    // debugger
+
     return { skillsset, getImageUrl };
   }
 };

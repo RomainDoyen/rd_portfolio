@@ -1,7 +1,7 @@
 <template>
     <div class="articles">
       <h2 id="competence">👨🏻‍💻 {{ msg }}</h2>
-      <div class="skills-bar">
+      <div class="skills-bar" ref="boxArticles">
         <div class="bar" v-for="(skill, i) in skillsset" :key="i">
           <table>
             <tbody>
@@ -24,10 +24,20 @@ import { ref, onMounted } from 'vue';
 import { getFirestore, collection, onSnapshot, getDocs } from 'firebase/firestore';
 import { storage } from '../utils/firebase.config.js';
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default {
   name: 'SkillsVue',
   props: {
     msg: String
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.animateBoxes(); // Call the animation function when the component is mounted
+    });
   },
   setup() {
     const skillsset = ref([]);
@@ -57,6 +67,33 @@ export default {
     // debugger
 
     return { skillsset, getImageUrl };
-  }
+  },
+  methods: {
+    animateBoxes() {
+      const boxArticles = this.$refs.boxArticles; // Référence à l'élément DOM
+      
+      // Utilise querySelectorAll pour sélectionner tous les éléments internes
+      const boxes = boxArticles.querySelectorAll('.bar');
+
+      boxes.forEach((box) => {
+        gsap.fromTo(
+          box,
+          {
+            opacity: 0,
+            y: 50,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 2,
+            scrollTrigger: {
+              trigger: box,
+              start: "top 80%",
+            },
+          }
+        );
+      });
+    },
+  },
 };
 </script>

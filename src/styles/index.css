@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,500");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import url(components/_footer.scss);
+@import url(components/_home.scss);
+@import url(components/_scroll_animation.scss);
+@import url(pages/_intro.scss);
+@import url(pages/_portfolio.scss);
+@import url(pages/_skills.scss);
+@import url(_settings.scss);/*# sourceMappingURL=index.css.map */

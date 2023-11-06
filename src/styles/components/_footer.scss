@@ -55,6 +55,18 @@
     margin-top: 20px;
 }
 
+.footer-social a:hover > i.fa-facebook-f {
+    color: #3b5998;
+}
+
+.footer-social a:hover > i.fa-instagram {
+    color: #e4405f;
+}
+
+.footer-social a:hover > i.fa-github {
+    color: #333;
+}
+
 .copy {
     text-align: center;
     text-transform: capitalize;

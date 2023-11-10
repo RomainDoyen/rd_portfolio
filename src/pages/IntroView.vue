@@ -15,33 +15,6 @@
       </div>
     </div>
 </template>
-  
-<!--<script>
-  import ScrollAnimation from "../components/ScrollAnimation.vue";
-  import gsap from "gsap";
-  
-  export default {
-    components: {
-      ScrollAnimation,
-    },
-    mounted() {
-      const homeAnim = this.$refs.homeAnim;
-      gsap.to(homeAnim, { duration: 1, y: 0, opacity: 1, delay: 0.3 });
-    },
-    name: "IntroVue",
-    props: {
-      msg: String
-    },
-    data: () => ({
-      posts: [
-        {
-          articles: "Étudiant en Informatique et passionné par les domaines du développements (web front-end, design UI / UX, mobile) et de la maintenance informatique.",
-          cv: "Télécharger mon CV",
-        },
-      ],
-    }),
-  };
-</script> -->
 
 <script>
 import ScrollAnimation from "../components/ScrollAnimation.vue";
@@ -91,10 +64,9 @@ export default {
     posts: [
       {
         articles:
-          "Étudiant en Informatique et passionné par les domaines du développements (web front-end, design UI / UX, mobile) et de la maintenance informatique.",
+          "Passionné par les domaines du développement web (front-end, design UI / UX, mobile) et de la maintenance informatique.",
         cv: "Télécharger mon CV",
       },
-      // Add more post objects if needed
     ],
   }),
 };

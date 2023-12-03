@@ -1,0 +1,35 @@
+.main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 115px auto 0;
+}
+
+.contact-social a:hover > i.fa-facebook-f {
+    color: #3b5998;
+}
+
+.contact-social a:hover > i.fa-instagram {
+    color: #e4405f;
+}
+
+.contact-social a:hover > i.fa-github {
+    color: #333;
+}
+
+.contact-social a:hover > i.fa-linkedin-in {
+    color: #0077b5;
+}
+
+.single-contact {
+    padding: 1em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-social {
+    margin-top: 2em;
+}

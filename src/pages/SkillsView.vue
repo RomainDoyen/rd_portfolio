@@ -1,6 +1,6 @@
 <template>
     <div class="articles">
-      <h2 id="competence">👨🏻‍💻 {{ msg }}</h2>
+      <h2 id="competence">{{ msg }}</h2>
       <div class="skills-bar" ref="boxArticles">
         <div class="bar" v-for="(skill, i) in skillsset" :key="i">
           <table>
@@ -73,7 +73,7 @@ export default {
       const boxArticles = this.$refs.boxArticles; // Référence à l'élément DOM
       
       // Utilise querySelectorAll pour sélectionner tous les éléments internes
-      const boxes = boxArticles.querySelectorAll('.bar');
+      const boxes = boxArticles.querySelectorAll('.skills-bar');
 
       boxes.forEach((box) => {
         gsap.fromTo(

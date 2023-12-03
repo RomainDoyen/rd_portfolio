@@ -1,7 +1,7 @@
 <template>
     <div class="articles">
-      <h2 id="portfolio"> 📸 {{ msg }}</h2>
-          <div class="cot">
+      <h2 id="portfolio">{{ msg }}</h2>
+          <div class="cot" ref="boxArticles">
             <div class="box-article art" v-for="projet in projets" :key="projet.id">
               <div v-if="projet?.link" class="link">
                 <a class="link-projet" target="_blank" :href="projet.link" aria-label="Lien vers le site du projet">
@@ -29,10 +29,18 @@ import { ref, onMounted } from 'vue';
 import { getFirestore, collection, onSnapshot, getDocs } from 'firebase/firestore';
 import { storage } from '../utils/firebase.config.js';
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
   name: 'PortfolioVue',
   props: {
     msg: String
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.animateBoxes(); // Call the animation function when the component is mounted
+    });
   },
   setup() {
     const projets = ref([]);
@@ -60,6 +68,33 @@ export default {
     };
 
     return { projets, getImageUrl };
-  }
+  },
+  methods: {
+    animateBoxes() {
+      const boxArticles = this.$refs.boxArticles; // Référence à l'élément DOM
+      
+      // Utilise querySelectorAll pour sélectionner tous les éléments internes
+      const boxes = boxArticles.querySelectorAll('.cot');
+
+      boxes.forEach((box) => {
+        gsap.fromTo(
+          box,
+          {
+            opacity: 0,
+            y: 50,
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 2,
+            scrollTrigger: {
+              trigger: box,
+              start: "top 80%",
+            },
+          }
+        );
+      });
+    },
+  },
 };
 </script>

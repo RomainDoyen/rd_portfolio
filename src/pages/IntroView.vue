@@ -1,6 +1,6 @@
 <template>
     <div class="articles">
-      <h2> 👨🏽‍🎓 {{ msg }}</h2>
+      <h2 id="apropos">{{ msg }}</h2>
       <div v-for="(post, i) in posts" :key="i">
           <div class="sous-articles">
             <div class="box-article" ref="boxArticles">

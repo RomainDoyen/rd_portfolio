@@ -1,7 +1,26 @@
 div.motion_menu {
-  padding: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px;
   font-size: 20px;
   list-style: none;
+}
+
+div.motion_menu.scrolled {
+  background-color: var(--color-head-p);
+  padding: 20px;
+  transition: 0.35s ease-out;
+}
+
+div.motion_menu.scrolled li a {
+  color: var(--color-menu-li-a-hover);
+  transition: 0.35s ease-out;
+}
+
+.div.motion_menu.scrolled li a:hover {
+  color: var(--color-menu-li-a);
+  transition: 0.35s ease-out;
 }
 
 div.menu li {
@@ -66,6 +85,10 @@ div.head p {
   font-weight: 360;
   line-height: 2em;
   font-size: 20px;
+}
+
+.sous-articles.top {
+  margin-top: 50px;
 }
 
 div.sous-articles a {

@@ -34,7 +34,7 @@ export default {
     contacts: [
       {
         subtitle: 'Mail',
-        mail: 'romain.doyen39@gmail.com',
+        mail: 'romain.doyen97@gmail.com',
       }
     ]
   }),

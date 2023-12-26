@@ -64,7 +64,7 @@ export default {
     posts: [
       {
         articles:
-          "Passionné par les domaines du développement web (front-end, design UI / UX, mobile) et de la maintenance informatique.",
+          "Passionné par les domaines du développement d'application web (front-end, back-end, design UI / UX) et de la maintenance informatique.",
         cv: "Télécharger mon CV",
       },
     ],

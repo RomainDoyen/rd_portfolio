@@ -38,6 +38,9 @@ tr {
   display: flex;
   justify-content: center;
   border: 1px solid var(--border-box-article);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }
 
 .bar {

@@ -9,6 +9,7 @@
   border: 1px solid var(--border-box-article);
   /*flex: 1 1 300px;*/
   position: relative;
+  max-width: 900px;
 }
 
 .cot {
@@ -64,7 +65,6 @@ div.art img {
   font-weight: bold;
   color: rgb(24, 24, 24);
   transition: all 0.35s ease-out;
-  cursor: pointer;
 }
 
 .techno:hover {
@@ -73,9 +73,15 @@ div.art img {
 
 .tags {
   border-radius: 10px;
-  border: 1px solid var(--border-tags);
+  border: 1px solid #515151;
   padding: 10px;
   margin-left: 8px;
+  background-color: #829fc4;
+  transition: all 0.35s ease-out;
+}
+
+.tags:hover {
+  background-color: var(--color-link-projet);
 }
 
 @media only screen and (max-width: 1110px) {

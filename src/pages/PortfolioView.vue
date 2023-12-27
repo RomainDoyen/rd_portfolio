@@ -17,7 +17,8 @@
             <h4>{{ projet.description }}</h4>
             <img :src="getImageUrl(projet.img)" alt="projet" />
             <div class="techno">
-              <span class="tags" v-for="tech in projet?.tech" :key="tech.id" :style="{ backgroundColor: tech.color }"># {{ tech.name }}</span>
+              <!-- <span class="tags" v-for="tech in projet?.tech" :key="tech.id" :style="{ backgroundColor: tech.color }"># {{ tech.name }}</span> -->
+              <span class="tags" v-for="tech in projet?.tech" :key="tech.id"># {{ tech.name }}</span>
             </div>
           </div>
         </div>

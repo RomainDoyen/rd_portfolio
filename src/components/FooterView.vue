@@ -4,13 +4,13 @@
           <div class="main" v-for="(footer, i) in footers" :key="i">
             <div class="copy">
                 <p>&copy; {{ footer.cop_1 }}
+                    {{ footer.cop_2 }}
                     <span id="dac">
                     <a :href="footer.cop_3" target="_blank">
                         <img id="dac-logo" src="../assets/2.webp" alt="footer" />
                     </a>
                     </span>
-                    {{ footer.cop_2 }}
-                    <span class="non-clickable-link">{{ footer.cgu }}</span>
+                    <!-- <span class="non-clickable-link">{{ footer.cgu }}</span> -->
                 </p>
             </div>
           </div>
@@ -27,10 +27,9 @@
       data: () => ({
           footers: [
               {
-                  cop_1: `Romain Doyen ${new Date().getFullYear()} by  `,
-                  cop_2: ' Tous droits réservés.',
+                  cop_1: `Copyright ${new Date().getFullYear()} -  `,
+                  cop_2: 'Designed and built by Romain Doyen Aka Design And Creation ',
                   cop_3: 'https://designandcreation.vercel.app/',
-                  cgu: ' CGU'
               }
           ]
       }),

@@ -15,7 +15,9 @@
             </div>
             <h3>{{ projet.title }}</h3>
             <h4>{{ projet.description }}</h4>
-            <img :src="getImageUrl(projet.img)" alt="projet" />
+            <!-- Si c'est une video -->
+            <video v-if="projet.video" :src="getImageUrl(projet.video)" controls width="500"></video>
+            <img v-if="projet.img" :src="getImageUrl(projet.img)" alt="projet" />
             <div class="techno">
               <!-- <span class="tags" v-for="tech in projet?.tech" :key="tech.id" :style="{ backgroundColor: tech.color }"># {{ tech.name }}</span> -->
               <span class="tags" v-for="tech in projet?.tech" :key="tech.id"># {{ tech.name }}</span>

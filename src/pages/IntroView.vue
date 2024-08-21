@@ -8,10 +8,10 @@
             </div>
           </div>
         <scroll-animation></scroll-animation>
-        <div class="sous-articles" ref="boxArticles">
+        <!-- <div class="sous-articles" ref="boxArticles">
           <a href="/files/romain-doyen-cv.pdf" download="romain-doyen-cv.pdf" aria-label="CV"><i class="fa-regular fa-file-pdf"></i>&nbsp; {{ post.cv }}</a>
           <a href="https://github.com/RomainDoyen" target="_blank" aria-label="Profile Github"><i class="fa-brands fa-github"></i>&nbsp; Mon Github</a>
-        </div>
+        </div> -->
       </div>
     </div>
 </template>
@@ -65,7 +65,7 @@ export default {
       {
         articles:
           "Passionné par les domaines du développement d'application web (front-end, back-end, design UI / UX) et de la maintenance informatique.",
-        cv: "Télécharger mon CV",
+        // cv: "Télécharger mon CV",
       },
     ],
   }),

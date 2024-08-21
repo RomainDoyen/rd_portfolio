@@ -88,7 +88,11 @@ div.head p {
 }
 
 .sous-articles.top {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
+  margin-top: 150px;
+  position: fixed;
+  right: 15px;
+  z-index: 1000;
 }
 
 div.sous-articles a {
@@ -108,4 +112,10 @@ div.sous-articles a {
 div.sous-articles a:hover { 
   color: var(--color-sous-articles-a-hover);
   background-color: var(--bg-sous-articles-a-hover); 
+}
+
+@media only screen and (max-width: 1170px) {
+  div.sous-articles a {
+    margin-top: 10px;
+  }
 }

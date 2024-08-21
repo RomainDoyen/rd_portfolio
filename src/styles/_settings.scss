@@ -19,12 +19,12 @@
   --color-tech-hover: #3a77c7;
   --border-tags: #848383;
   /* Home */
-  --color-menu-li-a: #908f8f;
+  --color-menu-li-a: #5e5e5e;
   --color-menu-li-a-hover: #1d1d1d;
   --color-head-h1: #868686;
   --color-head-p: #c7a23a;
   --bg-head-p: #283f5c;
-  --color-sous-articles-a: #C7A23A;
+  --color-sous-articles-a: #283f5c;
   --color-sous-articles-a-hover: #d1d1d1;
   --bg-sous-articles-a-hover: #C7A23A;
   --bg-sous-articles-a: #d1d1d1;
@@ -144,7 +144,7 @@ h1, h2, h3 {
   }
 
   div.motion_menu.scrolled {
-    background-color: var(--bg-motion_menu);
+    /*background-color: var(--bg-motion_menu);*/
     color: var(--color-menu-li-a);
     position: relative;
   }

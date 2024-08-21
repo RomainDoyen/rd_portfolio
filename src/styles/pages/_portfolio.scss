@@ -85,16 +85,25 @@ div.art img, div.art video {
 }
 
 @media only screen and (max-width: 1110px) {
-  div.cot, div.art img {
+  div.cot, div.art img, div.art video {
     flex-wrap: wrap;
+    display: block;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
   .techno {
     display: contents;
   }
   .techno .tags {
     margin-bottom: 10px;
+  }
+
+  .tags {
+    flex-direction: column;
+  }
+
+  div.art video {
+    width: 100%;
   }
 }

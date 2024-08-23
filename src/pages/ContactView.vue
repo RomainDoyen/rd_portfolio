@@ -7,7 +7,7 @@
                 <div class="single-contact">
                       <!-- <h4>{{ contact.subtitle }}</h4> -->
                       <!-- <p>&nbsp;{{ contact.mail }}</p> -->
-                      <a href="mailto:romain.doyen97@gmail.com" aria-label="Mail"><i class="fa-solid fa-envelope"></i>&nbsp;{{ contact.mail }}</a>
+                      <a href="mailto:romain.doyen10@gmail.com" aria-label="Mail"><i class="fa-solid fa-envelope"></i>&nbsp;{{ contact.mail }}</a>
                   </div>
                   <div class="single-contact">
                       <h4>Mes réseaux !</h4>

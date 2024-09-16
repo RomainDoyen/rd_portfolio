@@ -2,7 +2,7 @@
     <div class="articles">
       <h2 id="contactme">{{ msg }}</h2>
         <div class="sous-articles">
-          <div class="box-article" v-for="(contact, i) in contacts" :key="i">
+          <div class="box-article ct" v-for="(contact, i) in contacts" :key="i">
               <div class="contact">
                 <div class="single-contact">
                   <h4>Contactez-moi via le formulaire !</h4>

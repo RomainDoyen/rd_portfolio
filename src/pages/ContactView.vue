@@ -5,9 +5,18 @@
           <div class="box-article" v-for="(contact, i) in contacts" :key="i">
               <div class="contact">
                 <div class="single-contact">
-                      <!-- <h4>{{ contact.subtitle }}</h4> -->
-                      <!-- <p>&nbsp;{{ contact.mail }}</p> -->
-                      <a href="mailto:romain.doyen10@gmail.com" aria-label="Mail"><i class="fa-solid fa-envelope"></i>&nbsp;{{ contact.mail }}</a>
+                  <h4>Contactez-moi via le formulaire !</h4>
+                  <div class="contact-social">
+                    <form-contact></form-contact>
+                  </div>
+                </div>
+                <div class="single-contact">
+                  <h4>Contactez-moi par mail !</h4>
+                      <div class="contact-social">
+                        <a href="mailto:romain.doyen10@gmail.com" aria-label="Mail">
+                          <i class="fa-solid fa-envelope"></i>&nbsp;{{ contact.mail }}
+                        </a>
+                      </div>
                   </div>
                   <div class="single-contact">
                       <h4>Mes réseaux !</h4>
@@ -25,7 +34,12 @@
 </template>
 
 <script>
+import FormContact from '../components/FormContact.vue';
+
 export default {
+  components: {
+    FormContact,
+  },
   name: "ContactVue",
   props: {
     msg: String,

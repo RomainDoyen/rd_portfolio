@@ -22,8 +22,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Composant Modal -->
     <Modal
       v-if="isModalOpen"
       :isOpen="isModalOpen"

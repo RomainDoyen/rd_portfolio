@@ -1,7 +1,9 @@
 <template>
   <div v-if="isOpen" class="modal-overlay" @click="closeModal">
     <div class="modal-content" @click.stop>
-      <button class="close-btn" @click="closeModal">X</button>
+      <button class="close-btn" @click="closeModal">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </button>
       <div class="modal-body">
         <div class="modal-image">
           <img :src="imageSrc" alt="Image du projet" />
@@ -63,10 +65,14 @@ export default {
   right: 10px;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   color: #333;
   font-weight: bold;
+}
+
+.close-btn:hover {
+  color: #f00;
 }
 
 .modal-body {
@@ -85,6 +91,7 @@ export default {
 }
 
 .modal-info {
+  margin-top: 20px;
   flex-grow: 1;
 }
 
@@ -96,6 +103,20 @@ export default {
 .modal-info p {
   font-size: 1.2rem;
   line-height: 1.6;
+}
+
+@media only screen and (max-width: 830px) {
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .close-btn {
+    z-index: 1;
+  }
+
+  .modal-image {
+    margin-top: 30px;
+  }
 }
 </style>
 

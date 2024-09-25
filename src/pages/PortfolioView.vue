@@ -4,12 +4,16 @@
     <div class="cot" ref="boxArticles">
       <div class="box-article art" v-for="projet in projets" :key="projet.id">
         <div v-if="projet?.link" class="link">
-          <a class="link-projet" target="_blank" :href="projet.link" aria-label="Lien vers le site du projet">
+          <a class="link-projet" target="_blank" :href="projet.link" aria-label="Lien vers le site du projet"
+            v-tooltip="'Voir le site'"
+          >
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
         <div v-if="projet?.link_code" class="link">
-          <a class="link-projet" target="_blank" :href="projet.link_code" aria-label="Lien vers le code source">
+          <a class="link-projet" target="_blank" :href="projet.link_code" aria-label="Lien vers le code source"
+            v-tooltip="'Voir le code'"
+          >
             <i class="fa-brands fa-github"></i>
           </a>
         </div>
@@ -37,11 +41,12 @@
 import { ref, onMounted } from 'vue';
 import Modal from '../components/Modal.vue';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import 'floating-vue/dist/style.css';
 
 export default {
   name: 'PortfolioVue',
   components: {
-    Modal
+    Modal,
   },
   props: {
     msg: String
@@ -83,7 +88,15 @@ export default {
       isModalOpen.value = true;
     };
 
-    return { projets, getImageUrl, isModalOpen, openModal, currentImage, currentTitle, currentDescription };
+    return { 
+      projets, 
+      getImageUrl, 
+      isModalOpen, 
+      openModal, 
+      currentImage, 
+      currentTitle, 
+      currentDescription, 
+    };
   },
   methods: {
     animateBoxes() {

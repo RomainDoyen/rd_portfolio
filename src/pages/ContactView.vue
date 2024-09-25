@@ -21,10 +21,38 @@
                   <div class="single-contact">
                       <h4>Mes réseaux !</h4>
                       <div class="contact-social">
-                          <a target="_blank" href="https://www.facebook.com/designandcreation39/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                          <a target="_blank" href="https://github.com/RomainDoyen/" aria-label="Github"><i class="fa-brands fa-github"></i></a>
-                          <a target="_blank" href="https://www.instagram.com/designandcreation_rd/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                          <a target="_blank" href="https://www.linkedin.com/in/romain-doyen/" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                          <a 
+                            target="_blank" 
+                            href="https://www.facebook.com/designandcreation39/" 
+                            aria-label="Facebook"
+                            v-tooltip="'Facebook'"
+                          >
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </a>
+                          <a 
+                            target="_blank" 
+                            href="https://github.com/RomainDoyen/" 
+                            aria-label="Github"
+                            v-tooltip="'Github'"
+                          >
+                            <i class="fa-brands fa-github"></i>
+                          </a>
+                          <a 
+                            target="_blank" 
+                            href="https://www.instagram.com/designandcreation_rd/" 
+                            aria-label="Instagram"
+                            v-tooltip="'Instagram'"
+                          >
+                            <i class="fa-brands fa-instagram"></i>
+                          </a>
+                          <a 
+                            target="_blank" 
+                            href="https://www.linkedin.com/in/romain-doyen/" 
+                            aria-label="Linkedin"
+                            v-tooltip="'Linkedin'"
+                          >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                          </a>
                       </div>
                   </div>
               </div>
